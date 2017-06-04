@@ -29,17 +29,17 @@ body {
 		}
 	}
 	.index-main {
-		padding-top:100px;
+		//padding-top:100px;
 		opacity:1;
 		transition: opacity 1s ease;
 		& > img {
-			position:absolute;
+			position:fixed;
 			z-index:-5;
 		}
 		.body-text {
 			& > img {
 				width:200px;
-				margin:50px auto;
+				display:table;
 			}
 			p {
 				@include span-columns(12);
@@ -72,10 +72,7 @@ body {
 		padding-top:20px;
 		//@include span-columns(12);
 		//@include shift(4);
-		img {
-			margin:0px auto;
-			display:table;
-		}
+
 	}
 	.index-main {
 		& > img {
@@ -91,8 +88,10 @@ body {
   	a {
     	display: none;
     }
-		img {
-			display:none;
+		.body-text {
+			img {
+				//display:none;
+			}
 		}
   }
   .body-text {
@@ -108,14 +107,22 @@ body {
   }
 }
 
+@media (min-width: 416px) {
+	.body-text {
+		& > img {
+			margin:0px auto 50px;
+		}
+	}
+}
+
 @media (max-width: 415px) {
 	.index-main {
 		& > img {
-			display:none;
+			//display:none;
 		}
   }
   .body-text {
-  	padding:100px 20px;
+  	padding:0px 20px;
   	@include span-columns(12);
   }
 }

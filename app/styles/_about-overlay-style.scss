@@ -8,6 +8,7 @@
 	left:0;
 	bottom:0;
 	right:0;
+	z-index:100;
 	header {
 		position:relative;
 		.logo {
@@ -15,10 +16,12 @@
 		}
 		.fa {
 			float:right;
-			color:#F0552D;
+			color:$main-orange;
 			font-size:36px;
-			margin-top: 10px;
+			margin-top: 0px;
 			cursor:pointer;
+			position: fixed;
+
 		}
 	}
 
@@ -41,7 +44,7 @@
 		}
 		font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 		color: #404041;
-		margin:60px auto 0px !important;
+		margin:0px auto 0px !important;
 		display:table;
 		float:none;
 		font-size:24px;
@@ -53,6 +56,12 @@
 	.about-body {
 		@include span-columns(8);
 	}
+	header {
+		.fa {
+			top:10px;
+			right:20px;
+		}
+	}
 }
 
 @media (max-width: 415px) {
@@ -62,5 +71,11 @@
 		}
 		padding:0px 20px;
 		@include span-columns(12);
+	}
+	header {
+		.fa {
+			top:5px;
+			right:5px;
+		}
 	}
 }

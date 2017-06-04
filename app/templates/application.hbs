@@ -1,20 +1,24 @@
-<div style="position:fixed;top:0px;left:0;width:100%;text-align:center;color:#58585b;background-color:white;font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;font-size:18px;z-index:1000;">
-  <p><a href="https://www.eventbrite.com/e/redesign-your-workday-tickets-24936204860">Learn more</a> about co-operative design and how you can join the movement.</p>
+<div class="top-flag {{hideValue}}">
+  <div class="container">
+    <p>Join the co-operative design and manufacture movement</p><div class="button-container"><button class="btn btn-2">learn more</button><p {{action "hide"}}>No thanks.</p></div>
+  </div>
 </div>
-<header class={{this.currentRouteName}} style="padding-top:10px;">
+<header class={{this.currentRouteName}}>
 	<div class="logo"></div>
 	{{about-overlay}}
 </header>
 
 {{liquid-outlet}}
 
+<!--
 <footer class={{this.currentRouteName}}>
 	<nav>
 		<ul>
 			{{link-to 'shop' 'index' tagName="li" id="menu-index" href=false}}
 			{{link-to 'co-op' 'co-op' tagName="li" id="menu-co-op" href=false}}
-      {{link-to 'for designers' 'designers' tagName="li" id="menu-designers" href=false}}
+      {{link-to 'design workshop' 'designers' tagName="li" id="menu-designers" href=false}}
       {{link-to 'supply chain' 'manufacturing' tagName="li" id="menu-manufacturing" href=false}}
 		</ul>
 	</nav>
 </footer>
+-->

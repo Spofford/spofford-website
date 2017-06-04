@@ -6,9 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('co-op');
-  this.route('designers');
-  this.route('manufacturing');
+  //this.route('co-op');
+  //this.route('designers');
+  //this.route('manufacturing');
   // this.route('workshop', { path: '/workshop' });
 });
 
