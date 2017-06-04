@@ -1,16 +1,17 @@
 <nav>
 	<ul>
-		<li>login</li>
-		<li {{action "showHide"}}>about</li>
+		<li {{action "showHideLogin"}}>login</li>
+		<li {{action "showHideAbout"}}>about</li>
 	</ul>
 </nav>
 
 <div class="overlay">
 	<header class={{this.currentRouteName}}>
 		<div class="logo about"></div>
-		{{fa-icon "close" click=(action "showHide")}}
+		{{fa-icon "close" click=(action "close")}}
 	</header>
 
+	{{#if about}}
 	<div class="about-body">
 		<div class="papua">
 			<h3>Designing <i>with</i>, not <i>for</i>.</h3>
@@ -37,6 +38,22 @@
 			<button class="btn btn-2">learn more</button>
 		</div>
 	</div>
+	{{else}}
+	<form>
+		<h1>Members Login</h1>
+		<div class="error-container" style="height:40px;">
+		{{#if error}}
+		<p style="color:red;"><i>Incorrect email address/username or password</i></p>
+		{{/if}}
+		</div>
+		<label style="display:none;">Email address or username</label>
+		<input type="email" placeholder="Enter email address or username" />
+
+		<label style="display:none;">Password</label>
+		<input type="email" placeholder="Enter password" />
+		<div class="button-container"><button class="btn btn-2" {{action "toggleError"}}>learn more</button><p {{action "close"}}>No thanks.</p></div>
+	</form>
+	{{/if}}
 </div>
 
 

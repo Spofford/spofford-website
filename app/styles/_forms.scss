@@ -1,0 +1,34 @@
+$hover-animation-speed: 0.35s;
+$fast-hover-animation-speed: 0.1s;
+
+#{$all-text-inputs},
+textarea {
+  @include appearance(none);
+  @include transition(all $hover-animation-speed);
+
+  box-sizing: border-box;
+  border: 1px solid #EEEEEE;
+  border-radius: 2px;
+  color: #979797;
+  line-height: 1.5em;
+  font-size:16px;
+  background-color: #FAFAFA;
+
+  @include placeholder {
+    @include transition(all $fast-hover-animation-speed);
+
+    font-family: "Libre Baskerville";
+    font-style: italic;
+    color: #979797;
+    font-size:16px;
+  }
+  &:focus {
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(151, 151, 151, 0.4);
+  }
+}
+
+#{$all-text-inputs} {
+  height: 35px;
+  padding: 0 5px;
+}
