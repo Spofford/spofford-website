@@ -1,7 +1,7 @@
 {
-  "name": "subforum",
+  "name": "spofford",
   "version": "0.0.0",
-  "description": "Small description for subforum goes here",
+  "description": "Spofford is reinventing the purchase, design, and manufacture of home goods",
   "private": true,
   "directories": {
     "doc": "doc",

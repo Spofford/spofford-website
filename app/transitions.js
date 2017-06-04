@@ -1,20 +1,38 @@
-export default function(){  
+export default function(){
   this.transition(
-    this.fromRoute('press'),
-    this.toRoute('index'),
-    this.use('fade'),
-    this.reverse('fade')
+    this.fromRoute('index'),
+    this.toRoute('co-op'),
+    this.use('toLeft', { duration: 500 }),
+    this.reverse('toRight')
   );
   this.transition(
-    this.fromRoute('press'),
-    this.toRoute('distraction'),
+    this.fromRoute('index'),
+    this.toRoute('designers'),
     this.use('toLeft'),
     this.reverse('toRight')
   );
   this.transition(
-    this.fromRoute('distraction'),
-    this.toRoute('index'),
-    this.use('toUp'),
-    this.reverse('toDown')
+    this.fromRoute('index'),
+    this.toRoute('manufacturing'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+  this.transition(
+    this.fromRoute('co-op'),
+    this.toRoute('designers'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+  this.transition(
+    this.fromRoute('co-op'),
+    this.toRoute('manufacturing'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+  this.transition(
+    this.fromRoute('designers'),
+    this.toRoute('manufacturing'),
+    this.use('toLeft'),
+    this.reverse('toRight')
   );
 }

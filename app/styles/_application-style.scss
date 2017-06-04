@@ -1,7 +1,11 @@
 
 body {
+  font-size:18px;
   a {
-    color:$main-orange;
+    color:$blue-1a;
+  }
+  p {
+    font-family: 'Libre Baskerville', serif;
   }
   .liquid-container {
     position:absolute !important;
@@ -9,6 +13,9 @@ body {
     bottom:0;
     left:0;
     right:0;
+  }
+  .liquid-child {
+    height:100%;
   }
 	ul {
 		list-style: none;
@@ -45,7 +52,7 @@ body {
 
     }
     ul {
-      margin-top:10px;
+      margin-top:0px;
     }
   }
   footer {
@@ -63,7 +70,7 @@ body {
   			li {
           display:inline-block;
   				cursor: pointer;
-  				margin-right:40px;
+
           position:relative;
           font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
           text-transform: uppercase;
@@ -72,6 +79,9 @@ body {
   				&.active {
   					// border-bottom:1px solid black;
   				}
+          &:not(:last-child) {
+            margin-right:40px;
+          }
   			}
   		}
   	}

@@ -13,6 +13,10 @@ body {
 			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			font-weight: 200;
 			letter-spacing: .3px;
+			display:inline-block;
+			&:first-child {
+				margin-right:20px;
+			}
 		}
 	}
 	footer.index {
@@ -34,27 +38,44 @@ body {
 		}
 		.body-text {
 			& > img {
-				width:400px;
+				width:200px;
+				margin:50px auto;
+			}
+			p {
+				@include span-columns(12);
+				text-align:center;
+			}
+			.social-box {
+				@include span-columns(12);
+				margin-top:2%;
 			}
 			color:white;
 			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
-			font-size:36px;
+			//font-size:36px;
 		}
 		.fa {
 			font-size:72px;
 			color:white;
-			@include span-columns(1);
-			cursor: pointer;
-			margin-top:20%;
+			@include span-columns(3);
+			text-align:center;
+			//cursor: pointer;
+			//margin-top:20%;
 		}
 	}
 }
 
 @media (min-width: 768px) {
 	.body-text {
+		max-width:940px;
+		margin:0px auto;
+		display:table;
 		padding-top:20px;
-		@include span-columns(8);
-		@include shift(4);
+		//@include span-columns(12);
+		//@include shift(4);
+		img {
+			margin:0px auto;
+			display:table;
+		}
 	}
 	.index-main {
 		& > img {
