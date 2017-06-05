@@ -69,11 +69,13 @@ body {
     left:0;
     right:0;
     */
-    height:auto;
+    height:100%;
     width:100%;
+    overflow:initial !important;
   }
   .liquid-child {
-    height:auto;
+    height:100%;
+    overflow:initial !important;
   }
 	ul {
 		list-style: none;
