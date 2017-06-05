@@ -1,6 +1,6 @@
-<div class="top-flag {{hideValue}}">
+<div class="top-flag {{hideValue}} {{this.currentRouteName}}">
   <div class="container">
-    <p>Join the co-operative design and manufacture movement</p><div class="button-container"><button class="btn btn-2">learn more</button><p {{action "hide"}}>No thanks.</p></div>
+    <p>Join the co-operative design and manufacture movement</p><div class="button-container">{{link-to "learn more" "signup" classNames="btn btn-2" tagName="button"}}<p {{action "hide"}}>No thanks.</p></div>
   </div>
 </div>
 <header class={{this.currentRouteName}}>

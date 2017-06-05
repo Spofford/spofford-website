@@ -1,0 +1,36 @@
+
+
+.landing-page {
+  max-width:770px;
+  margin:0px auto;
+  display:table;
+  float:none;
+  //@include span-columns(12);
+  header {
+    height:30px;
+  }
+  h1 {
+    text-align:center;
+  }
+  form {
+    @include span-columns(8);
+    @include shift(2);
+    input[type="text"], input[type="email"] {
+      width:100%;
+    }
+    input {
+      margin-bottom:20px;
+    }
+    input[type="radio"] {
+      margin-right:10px;
+      margin-bottom:20px;
+      //float:left;
+      color: #6D6D6D;
+    }
+    li {
+      input, label {
+        display:inline-block;
+      }
+    }
+  }
+}

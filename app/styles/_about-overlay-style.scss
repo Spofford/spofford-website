@@ -1,3 +1,7 @@
+.logo.about, .landing-page .logo {
+	background-image: url('watermark_orange.svg') !important;
+}
+
 .overlay {
 	overflow:scroll;
 	display:none;
@@ -29,9 +33,7 @@
 	}
 	header {
 		position:relative;
-		.logo {
-			background-image: url('watermark_orange.svg') !important;
-		}
+
 		.fa {
 			float:right;
 			color:$main-orange;

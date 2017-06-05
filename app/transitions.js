@@ -1,6 +1,13 @@
 export default function(){
   this.transition(
     this.fromRoute('index'),
+    this.toRoute('signup'),
+    this.use('toLeft', { duration: 500 }),
+    this.reverse('toRight')
+  );
+  /*
+  this.transition(
+    this.fromRoute('index'),
     this.toRoute('co-op'),
     this.use('toLeft', { duration: 500 }),
     this.reverse('toRight')
@@ -35,4 +42,5 @@ export default function(){
     this.use('toLeft'),
     this.reverse('toRight')
   );
+  */
 }

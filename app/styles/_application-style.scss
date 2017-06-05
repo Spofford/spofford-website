@@ -4,6 +4,9 @@ body, html {
   margin:0px;
 }
 body {
+  h1, h2 {
+    font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+  }
   .button-container {
     //width:250px;
     float:left;
@@ -29,6 +32,9 @@ body {
     overflow:auto;
     padding-top:20px;
     transition: height .5s linear;
+    &.signup {
+      display:none;
+    }
     &.false {
       height:0px;
       transition: height .5s linear;
@@ -63,16 +69,19 @@ body {
     left:0;
     right:0;
     */
-    height:100%;
+    height:auto;
     width:100%;
   }
   .liquid-child {
-    height:100%;
+    height:auto;
   }
 	ul {
 		list-style: none;
 	}
 	header {
+    &.signup {
+      display:none;
+    }
     padding: 10px 20px;
     height:80px;
     //position:fixed;

@@ -10,6 +10,7 @@ Router.map(function() {
   //this.route('designers');
   //this.route('manufacturing');
   // this.route('workshop', { path: '/workshop' });
+  this.route('signup');
 });
 
 export default Router;
