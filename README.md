@@ -1,6 +1,6 @@
 # Spofford
 
-New pipeline
+single npm install
 
 ## Prerequisites
 
