@@ -1,6 +1,6 @@
 # Spofford
 
-single npm install
+single npm install again
 
 ## Prerequisites
 
