@@ -1,6 +1,6 @@
 # Spofford
 
-single npm install again
+update node sass
 
 ## Prerequisites
 
