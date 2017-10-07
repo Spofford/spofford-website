@@ -1,6 +1,6 @@
 # Spofford
 
-update node sass
+retrying
 
 ## Prerequisites
 
