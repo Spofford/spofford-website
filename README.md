@@ -1,6 +1,6 @@
 # Spofford
 
-retrying
+change npm version to 5.2
 
 ## Prerequisites
 
