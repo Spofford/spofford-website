@@ -2,6 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentful: {
+      accessToken: 'a91d4bc0d6b19ef7bb92c4327fe1d9806b3cc1d49719747650c4f4633d1d459e',
+  		space: '4wgubu2ijtof'
+    },
     modulePrefix: 'spofford',
     environment: environment,
     baseURL: '/',
@@ -40,6 +44,7 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+
   }
 
   if (environment === 'production') {
