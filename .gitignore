@@ -5,9 +5,9 @@
 /tmp
 
 # dependencies
-/node_modules
+node_modules
 /bower_components
-/package-lock.json
+package-lock.json
 
 # misc
 /.sass-cache
