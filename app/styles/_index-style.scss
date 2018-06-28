@@ -54,10 +54,10 @@ body {
 			//font-size:36px;
 		}
 		.fa {
-			font-size:72px;
+			font-size:100px;
 			color:white;
-			@include span-columns(3);
-			text-align:center;
+			//@include span-columns(3);
+			margin-left:10%;
 			//cursor: pointer;
 			//margin-top:20%;
 		}
@@ -86,7 +86,12 @@ body {
 @media (max-width: 768px) {
   .index-main {
   	a {
-    	display: none;
+    	@include span-columns(5);
+			float:left;
+			margin-bottom:50px;
+			.fa  {
+				margin-left:40%;
+			}
     }
 		.body-text {
 			img {
@@ -125,4 +130,8 @@ body {
   	padding:0px 20px;
   	@include span-columns(12);
   }
+}
+
+.leadinModal {
+	font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 }

@@ -1,12 +1,15 @@
 import Ember from 'ember';
+
+/*
 import {createClient} from 'contentful';
 
 const client = createClient({
   // This is the space ID. A space is like a project folder in Contentful terms
-  space: SPACE_ID
+  space: '4wgubu2ijtof',
   // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-  accessToken: ACCESS_TOKEN
+  accessToken: 'a91d4bc0d6b19ef7bb92c4327fe1d9806b3cc1d49719747650c4f4633d1d459e'
 });
+*/
 
 export default Ember.Component.extend({
 	classNames: ['header-nav'],

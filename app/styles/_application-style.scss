@@ -181,11 +181,13 @@ body {
 
   header {
     .logo {
-      margin:0px auto;
-      display:table;
+      //margin:0px auto;
+      //display:table;
+      float:left;
     }
     .header-nav {
-      width:100%;
+      //width:100%;
+      float:right;
     }
     nav {
       width:100%;
