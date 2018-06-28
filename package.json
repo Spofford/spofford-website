@@ -47,6 +47,7 @@
     "loader.js": "^4.6.0"
   },
   "dependencies": {
-    "contentful": "5.1.0"
+    "contentful": "5.1.0",
+    "npm": "^6.1.0"
   }
 }
